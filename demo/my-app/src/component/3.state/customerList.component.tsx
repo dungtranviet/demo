@@ -33,33 +33,26 @@ class CustomerListComponent extends Component<CustomerProps, CustomerState> {
                         tel: '0378243543'
                     }
                 },
-                {
-                    name: 'Trần Toàn',
-                    age: 18,
-                    contact: {
-                        email: 'trantoan@gmail.com',
-                        tel: '0378453916'
-                    }
-                },
             ],
         }
     }
     render() {
-        // var elements = this.state.customers.map((customer, index) => {
-
-        //     var result =
-        //         <div>
-        //             <div>Customer Infor</div>
-        //             <div>Name: {customer.name}</div>
-        //             <div>Age: {customer.age}</div>
-        //             <div>Email : {customer.contact.email}</div>
-        //             <div>Tel : {customer.contact.tel}</div>
-        //         </div>
-        //     return result
-        // })
+        var elements = this.state.customers.map((customer, index) => {
+            var result =
+                <div>
+                    <div>Customer Infor</div>
+                    <div>Name: {customer.name}</div>
+                    <div>Age: {customer.age}</div>
+                    <div>Email : {customer.contact.email}</div>
+                    <div>Tel : {customer.contact.tel}</div>
+                </div>
+            return result
+        })
         return (
-            //{ elements }
-            <h1>ok</h1>
+            <div>
+               { elements }
+            </div>
+            
         );
     }
 }
@@ -95,8 +88,8 @@ export default CustomerListComponent;
 // export default CustomerListComponent;
 
 //sử dụng
-{/* <div>
+/* <div>
 <h1>app component</h1>
 <br></br>
 <CustomerListComponent/>
-</div> */}
+</div> */

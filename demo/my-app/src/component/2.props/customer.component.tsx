@@ -1,5 +1,4 @@
-import React, { Component, Props } from 'react';
-import { Agent } from 'https';
+import React, { Component } from 'react';
 
 interface customerInfor{
     name? : String,
@@ -9,7 +8,9 @@ interface customerInfor{
         tel?: String
     }
 }
+
 class CustomerComponent extends Component<customerInfor> {
+    // eslint-disable-next-line
     constructor(props : customerInfor){
         super(props)
     }
@@ -56,9 +57,9 @@ export default CustomerComponent;
 
 // export default CustomerComponent;
 
-//sử dụng
-{/* <div>
+
+/* <div>
 <h1>app component</h1>
 <br></br>
 <CustomerComponent name="Dung" age = {28} contact = {{email:'dungtvz91@gmail.com',tel : '0376910166'}}/>
-</div> */}
+</div> */

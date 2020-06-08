@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import CustomerListComponent from './component/3.state/customerList.component';
+import Counter from './component/4.lifecycle/couter/couter.component';
 
 function App() {
-  
+  const [showCouter, setShowCouter] = useState(true);
   return (
     <div>
       <h1>app component</h1>
       <br></br>
-      <CustomerListComponent/>
+      <button onClick = {()=>setShowCouter(!showCouter)}>Remove Counter</button>
+      {showCouter&&<Counter/>}
     </div>
   );
 }
