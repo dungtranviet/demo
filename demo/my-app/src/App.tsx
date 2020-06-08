@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import Counter from './component/4.lifecycle/couter/couter.component';
+import CounterFunc from './component/5.hook/lifecycle/counter.funtion';
+
 
 function App() {
   const [showCouter, setShowCouter] = useState(true);
@@ -9,7 +10,7 @@ function App() {
       <h1>app component</h1>
       <br></br>
       <button onClick = {()=>setShowCouter(!showCouter)}>Remove Counter</button>
-      {showCouter&&<Counter/>}
+      {showCouter&&<CounterFunc/>}
     </div>
   );
 }
