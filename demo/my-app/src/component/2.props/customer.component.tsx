@@ -16,7 +16,7 @@ class CustomerComponent extends Component<customerInfor> {
     }
     render() {
         return (
-            <div>
+            <div className="App">
                 <div>Customer Infor</div>
                 <div>Name: {this.props.name}</div>
                 <div>Age: {this.props.age}</div>

@@ -2,7 +2,7 @@ import React from 'react';
 //rsf hoặc rscp
 function FunctionComponent() {
     return (
-        <div>
+        <div className="App">
             <div>FunctionComponent</div>
             <form action="/action_page.php">
                 <label htmlFor="fname">First name:</label><br />

@@ -10,11 +10,11 @@ function CounterFunc() {
          setCount(count + 1)
     }
     useEffect(()=>{
-        console.log('run useEffect')
+        setTimeout(()=>{console.log('run useEffect')},2000)
         return () =>{
-            console.log('run useEffect clean up')
+            setTimeout(()=>{console.log('run useEffect clean up')},1000)
         }
-    },[])
+    })
     return (
         <div>
         <button onClick ={()=>{decrease()}}>-</button>

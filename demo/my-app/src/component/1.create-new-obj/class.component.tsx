@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ClassComponent extends Component {
     render() {
         return (
-            <div>
+            <div className="App">
             <div>ClassComponent</div>
             <form action="/action_page.php">
                 <label htmlFor="fname">First name:</label><br />
